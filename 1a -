@@ -1,0 +1,5 @@
+{
+  replicaCount: .spec.replicas,
+  strategyType: .spec.strategy.type,
+  serviceEnvironment: "\(.metadata.labels.service)-\(.metadata.labels.environment)"
+}
